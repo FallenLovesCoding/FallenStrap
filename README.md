@@ -1,6 +1,44 @@
 # FallenStrap
-Fallenstrap is a lightweight, open-source alternative bootstrapper for Roblox built entirely in C#. Designed to replace the restrictive stock launcher, it gives power users full control over their client’s performance, aesthetics, and hidden configurations without relying on memory-injecting exploits or risking account safety.
 
-Keywords & Tagsroblox-bootstrapper csharp bloxstrap-alternative fastflags fflag-editor roblox-tweaks discord-rpc fps-unlocker roblox-modding windows-launcher
+A lightweight, open-source alternative bootstrapper for Roblox built entirely in C#. It replaces the restrictive stock launcher to give you full control over client performance, aesthetics, and hidden engine configurations—completely external, safe, and with zero memory injection.
 
-UsageFallenstrap is designed to replace the default Roblox launcher. Follow these steps to configure your environment and launch the client:1. Initial SetupRun Fallenstrap.exe for the first time to generate the core configuration files.Select your preferred setup pathway: Standard Integration (overrides default desktop shortcuts) or Portable Mode (runs completely out of its own directory).2. Managing FastFlags (FFlags)Navigate to the FastFlag Editor tab within the UI.Use the search bar to find specific engine flags (e.g., DFIntTaskSchedulerTargetFps to set custom frame caps).Toggle performance optimization presets (e.g., forcing lighting technologies, lowering rendering details, or disabling telemetry).Click Apply Changes to write the variables directly into your local ClientSettings/ClientAppSettings.json profile.3. Installing Custom ModsDrop your custom assets (such as custom font files, mouse cursors, or the classic oof.mp3 sound) into the designated \ModFolder directory inside the Fallenstrap root.The launcher automatically injects these assets into the Roblox directory tree right before booting up the engine, preserving your custom textures across silent Roblox client updates.4. Launching the GameLaunch Roblox via your browser or the desktop shortcut managed by Fallenstrap.The bootstrapper checks for official client updates, applies your persistent modifications, launches the game process, and immediately shuts itself down to preserve your system resources.
+---
+
+### Why use FallenStrap?
+* **Persistent Mods:** Keep your custom fonts, textures, mouse cursors, and sounds (like the classic 'oof') intact. They won't get wiped when Roblox updates.
+* **FastFlag Management:** Tweak hidden engine settings like custom FPS caps (`DFIntTaskSchedulerTargetFps`), forced lighting tech, and graphics optimizations via a simple UI.
+* **Discord Integration:** Built-in Rich Presence shows your active game and server details securely without risking your account cookies.
+* **Zero Bloat:** Written natively in C#. The bootstrapper closes completely the second the game starts, leaving no background processes running.
+
+---
+
+### How to Use It
+
+#### 1. Initial Setup
+* Run `FallenStrap.exe` to generate your local configuration files.
+* Choose **Standard Integration** (replaces default Roblox shortcuts) or **Portable Mode** (runs strictly inside its own folder).
+
+#### 2. Managing FastFlags (FFlags)
+* Open the **FastFlag Editor** tab in the UI.
+* Use the search bar to find or toggle performance presets (e.g., lower rendering details or disable telemetry).
+* Click **Apply Changes** to write these directly into your profile.
+
+#### 3. Installing Custom Mods
+* Drop your custom assets into the `\ModFolder` directory inside the FallenStrap root.
+* The launcher injects them into the client directory right before booting the game.
+
+#### 4. Launching the Game
+* Launch Roblox normally from your browser or desktop shortcut. 
+* FallenStrap checks for official updates, patches your mods, boots the engine, and exits.
+
+---
+
+### Tech & Licensing
+* **Language:** C#
+* **Platform:** Windows 10 / 11
+* **License:** [MIT License](LICENSE)
+
+---
+
+### Tags
+`roblox-bootstrapper` · `csharp` · `bloxstrap-alternative` · `fastflags` · `fflag-editor` · `roblox-tweaks` · `discord-rpc` · `fps-unlocker` · `roblox-modding` · `windows-launcher`
